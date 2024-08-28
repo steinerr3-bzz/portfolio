@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='x-ua-compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Personal Portfolio Website - Easy Tutorials</title>
+  <link rel='stylesheet' href='style.css'>
+  <script src='https://kit.fontawesome.com/5734caa0fc.js' crossorigin='anonymous'></script>
+</head>
+<body>
+<div id='header'>
+  <div class='container'>
+  <nav>
+    <img src='schwarz%20(1).jpg' alt='logo' class='logo'>
+    <ul id='sidemenu'>
+      <li><a href='#header'>Home</a></li>
+      <li><a href='#about'>Über mich</a></li>
+      <li><a href='#informatikkenntnisse'>Informatikkenntnisse</a></li>
+      <li><a href='#portfolio'>Meine Arbeit</a></li>
+      <li><a href='#contact'>Kontakt</a></li>
+      <i class='fas fa-times' onclick='closemenu()'></i>
+    </ul>
+    <i class='fas fa-bars' onclick='openmenu()'></i>
+  </nav>
+    <div class='header-text'>
+      <p>Informatikmittelschüler</p>
+      <h1>Hello, I'm <span>Ryan</span></h1>
+    </div>
+  </div>
+</div>
+
+<div id='about'>
+  <div class='container'>
+    <div class='row'>
+      <div class='about-col-1'>
+        <img src='Me.jpg' alt='user'>
+      </div>
+      <div class='about-col-2'>
+        <h1 class='sub-title'>Über mich</h1>
+        <p>Derzeit besuche ich die Informatikmittelschule an der Kantonsschule Hottingen und werde die Schule 2025 abschliessen. Neben meiner schulischen Ausbildung bin ich aktiv als Handballspieler bei GC Amicitia im U19 Elite-Team und als Trainer für die U9/U11 Mannschaft tätig. Diese Aktivitäten haben mir wichtige Kompetenzen in Teamarbeit, Verantwortungsbewusstsein und Zeitmanagement vermittelt. Mein Sprachaufenthalt in Newcastle hat meine Englischkenntnis auf ein C1-Niveau verbessert. Diese Erfahrungen haben meine Kommunikationsfähigkeiten erheblich erweitert.
+        </p>
+
+        <div class='tab-titles'>
+          <p class='tab-links active-link' onclick="opentab('werdegang')">Schulischer Werdegang</p>
+          <p class='tab-links' onclick="opentab('sprachkenntnisse')">Sprachkenntnisse</p>
+          <p class='tab-links' onclick="opentab('freizeit')">Freizeit</p>
+        </div>
+        <div class='tab-contents active-tab' id='werdegang'>
+          <ul>
+            <li><span>2022-2026</span><br>Kantonsschule Hottingen<br>Minervastrasse 14, 8090 Zürich <br>Informatikmittelschule</li>
+            <li><span>2018-2021</span><br>Schulhaus Lavater<br>Schulhausstrasse 1, 8002 Zürich<br>Sekundarschule</li>
+          </ul>
+        </div>
+        <div class='tab-contents' id='sprachkenntnisse'>
+          <ul>
+            <li><span>Deutsch</span><br>Muttersprache</li>
+            <li><span>Englisch</span><br>Sprachaufenthalt Newcastle, England (C1-Niveau, 2 Wochen)</li>
+            <li><span>Französisch</span><br>Sprachaufenthalt Biarritz, Frankreich (A2-Niveau, 2 Wochen</li>
+          </ul>
+        </div>
+        <div class='tab-contents' id='freizeit'>
+          <ul>
+            <li><span>Handball bei GC Amicitia</span><br>U19 Elite</li>
+            <li><span>Handballtrainer</span><br>U9/U11 Buchlern</li>
+            <li><span>Krafttraining im Fitnessstudio</span><br>EVO-Fitness</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id='informatikkenntnisse'>
+  <div class='container'>
+    <h1 class='sub-title'>Informatikkenntnisse</h1>
+    <div class='informatikkenntnisse-list'>
+      <div>
+        <i class="fa-brands fa-html5" ></i>
+        <h2>HTML</h2>
+        <p>HTML ist das Grundgerüst jeder Webseite. Es wird verwendet, um den Inhalt einer Seite zu strukturieren, wie Texte, Bilder und Links. Es ist sozusagen das Skelett einer Webseite, das bestimmt, was wo steht.</p>
+        <a href='https://www.w3schools.com/html/' target='_blank'>Learn more</a>
+      </div>
+      <div>
+        <i class='fa-brands fa-js'></i>
+        <h2>JS</h2>
+        <p>JavaScript ist eine Programmiersprache für dynamische und interaktive Webseiten. Es ermöglicht Funktionen wie aufklappbare Menüs, Formularvalidierung und das Ändern von Inhalten ohne Neuladen der Seite. </p>
+        <a href='https://www.w3schools.com/js/' target='_blank'>Learn more</a>
+      </div>
+      <div>
+        <i class='fa-brands fa-css3-alt'></i>
+        <h2>CSS</h2>
+        <p>CSS ist verantwortlich für das Aussehen und die Gestaltung einer Webseite. Mit CSS kann man das Design anpassen, Farben, Schriftarten und Layouts festlegen.</p>
+        <a href='https://www.w3schools.com/css/' target='_blank'>Learn more</a>
+      </div>
+      <div>
+        <i class='fa-solid fa-database'></i>
+        <h2>SQL</h2>
+        <p>SQL (Structured Query Language) ist eine Programmiersprache, die verwendet wird, um Daten in relationalen Datenbanken zu verwalten. Mit SQL kann man Daten abfragen, einfügen, aktualisieren und löschen sowie Datenbankschemata erstellen und ändern.</p>
+        <a href='https://www.w3schools.com/sql/' target='_blank'>Learn more</a>
+      </div>
+      <div>
+        <i class='fa-brands fa-python'></i>
+        <h2>Python</h2>
+        <p>Python ist eine einfache, vielseitige Programmiersprache, die in vielen Bereichen wie Webentwicklung, Datenanalyse und KI eingesetzt wird. Sie hat eine klare Syntax und viele nützliche Bibliotheken.</p>
+        <a href='https://www.w3schools.com/python/' target='_blank'>Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id='portfolio'>
+  <div class='container'>
+    <h1 class='sub-title'>Meine Arbeit</h1>
+    <div class='work-list'>
+      <div class='work'>
+        <img src='calendar.jpg' alt='calendar'>
+        <div class='layer'>
+          <h3>Kalender</h3>
+          <p>Ich habe einen Kalender programmiert, da es in meinem vollen Alltag wichtig ist, den Überblick zu behalten. Ich finde ihn sehr praktisch, weil ich darin alle meine Termine übersichtlich eintragen kann.</p>
+          <a href='#'><i class='fa-solid fa-arrow-up-right-from-square'></i></a>
+        </div>
+      </div>
+      <div class='work'>
+        <img src='ubscs.webp' alt='work2'>
+        <div class='layer'>
+          <h3>Informationswebsite</h3>
+          <p>Gemeinsam mit zwei Kollegen habe ich eine Informationswebsite erstellt, die aufzeigt, wie die Übernahme der Credit Suisse durch die UBS ablief und welche Gründe dafür ausschlaggebend waren.</p>
+          <a href='#'><i class='fa-solid fa-arrow-up-right-from-square'></i></a>
+        </div>
+      </div>
+      <div class='work'>
+        <img src='cookieclicker.jpg' alt='work3'>
+        <div class='layer'>
+          <h3>Cookie Clicker</h3>
+          <p>Mit Hilfe der Programmiersprache Python habe ich ein kleines Spiel entwickelt, das auf dem bekannten Spiel "Cookie Clicker" basiert.</p>
+          <a href='#'><i class='fa-solid fa-arrow-up-right-from-square'></i></a>
+        </div>
+      </div>
+    </div>
+    <a href='#' class='btn'>See more</a>
+  </div>
+</div>
+<!-------contact------->
+
+<div id='contact'>
+  <div class='container'>
+    <div class='row'>
+      <div class='contact-left'>
+        <h1 class='sub-title'>Kontaktiere mich </h1>
+        <p><i class='fa-solid fa-paper-plane'></i> rsteiner.dadier@icloud.com</p>
+        <p><i class='fa-solid fa-square-phone'></i> 079 626 70 62</p>
+        <a href='Lebenslauf_Ryan.pdf' download class='btn btn2'>Download CV</a>
+      </div>
+      <div class='contact-right'>
+        <form name='submit-to-google-sheet'>
+            <input type='text' name='Name' placeholder='Your Name' required>
+            <input type='email' name='Email' placeholder='Your Email' required>
+            <textarea name='Message' rows='6' placeholder='Your Message'></textarea>
+            <button type='submit' class='btn btn2'>Submit</button>
+        </form>
+        <span id='msg'></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  let tablinks = document.getElementsByClassName('tab-links');
+  let tabcontents = document.getElementsByClassName('tab-contents');
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove('active-link');
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove('active-tab');
+    }
+    event.currentTarget.classList.add('active-link')
+    document.getElementById(tabname).classList.add('active-tab');
+  }
+
+</script>
+
+<script>
+
+  let sidemenu = document.getElementById('sidemenu');
+
+  function openmenu(){
+    sidemenu.style.right = '0';
+  }
+  function closemenu(){
+    sidemenu.style.right = '-200px';
+  }
+
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzqVXRBbrGfjv7JnnyOtTW07QYWhGHkl0u8TDniaJzKx4f91poYU15dZ3h9b6XQ2d73/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById('msg')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              msg.innerHTML = 'Message sent successfully'
+              setTimeout(function (){
+                msg.innerHTML = ''
+              },5000)
+              form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
